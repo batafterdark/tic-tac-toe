@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.container{
+    display: grid;
+    grid-template: 20vh 60vh 20vh/ 1fr;
+    background-color: rgb(231, 219, 205)
+}
+    .topBar{
+        display:grid;
+    }
+        .topBar #topBarContent{
+            font-size: 8rem;
+            font-weight: bold;
+            justify-self: center;
+            align-self: center;
+            background: linear-gradient(135deg, #2c3e50, #bdc3c7);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #2c3e50;
+            font-family: 'Roboto', sans-serif;
+        }
+    .center{
+        display: grid;
+        grid-template: 1fr / 25vw 50vw 25vw ;
+    }
+        .leftSide, .rightSide {
+            display: grid;
+        }
+            .leftSide p{
+                font-family: 'Roboto', sans-serif;
+                font-size: 2rem;
+                font-weight: bolder;
+                justify-self: end;
+                align-self: center;
+                color: red;
+        }
+        .game{
+            height: 500px;
+            width: 400px;
+            align-self: center;
+            justify-self: center;
+            display: grid;
+            grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
+            border: 1px solid black;
+        }
+            .game div{
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                border: 1px solid black;
+            }
+            .rightSide p{
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.5rem;
+                font-weight: lighter;
+                justify-self: start;
+                align-self: center;
+                color: blue;
+            }
+    .bottom {
+        display: grid;
+        place-items: center;
+    }
+    .bottom #newGame{
+        border-radius: 45px;
+        font-size: 1.5rem;
+        font-family: 'Roboto', sans-serif;
+        background-color: grey;
+        color: white;
+        padding: 20px;
+        align-self: start;
+        justify-self: center;
+    }
